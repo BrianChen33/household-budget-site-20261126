@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Ledger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="#/overview">Home Ledger</a>
+  <span class="tagline">One household's budget, reconciled to the penny</span>
+  <nav aria-label="Sections">
+    <a data-route="overview" href="#/overview">Overview</a>
+    <a data-route="budget" href="#/budget">Budget</a>
+    <a data-route="transactions" href="#/transactions">Transactions</a>
+    <a data-route="bills" href="#/bills">Bills</a>
+    <a data-route="goals" href="#/goals">Goals</a>
+  </nav>
+</header>
+<main id="app"></main>
+<footer class="site-foot">
+  <p id="storage-note" hidden>Edits are kept for this session only — this browser is not storing them.</p>
+  <p>Example household — two adults, Manchester. Figures are illustrative records; public benchmarks are on the <a href="#/assumptions">Assumptions &amp; sources</a> page. No account, no network requests, nothing leaves your browser.</p>
+</footer>
+<script src="data/household.js"></script>
+<script src="store.js"></script>
+<script src="budget.js"></script>
+<script src="charts.js"></script>
+<script src="views/helpers.js"></script>
+<script src="views/overview.js"></script>
+<script src="views/budget.js"></script>
+<script src="views/transactions.js"></script>
+<script src="views/bills.js"></script>
+<script src="views/goals.js"></script>
+<script src="views/assumptions.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
